@@ -1,0 +1,39 @@
+{
+    "code": "200",
+    "data": [
+      {
+        "username": "高澄",
+        "id": 1,
+        "nickname": "高澄",
+        "role":
+        [{
+          "roleId":1,
+          "roleName":"管理员"
+        },{
+          "roleId":2,
+          "roleName":"普通用户"
+        }]
+      },
+         {
+        "username": "崔季舒",
+        "id": 2,
+        "nickname": "崔季舒",
+        "role":
+        [{
+          "roleId":1,
+          "roleName":"管理员"
+        }]
+      },
+      {
+        "username": "元善见",
+        "id": 3,
+        "nickname": "元善见",
+        "role":
+        [{
+          "roleId":2,
+          "roleName":"普通用户"
+        }]
+      }
+    ],
+    "desc": "成功"
+  }
