@@ -105,3 +105,43 @@ add(1);
   @decotator({name:'传参'})
   class AnotherHuman{}
 } */
+
+//------------------------------------------------type和interface差异
+
+{
+  /* interface侧重于描述对象结构，type是类型别名-->侧重于描述类型关系 */
+
+  /* 同名的interface会合并。同名的type会冲突 */
+  interface ICat{
+    name:string,
+    age:number
+  }
+  interface ICat{
+    gender:string
+  }
+  class Cat implements ICat{
+    name:'1';
+    age:1;
+    gender: '公猫'
+  }
+  type meow={
+    name:string,
+    age:number
+  }
+  /*  
+type meow={
+    gender:string
+  }
+  报错：标识符“meow”重复。  
+  */
+//-----------------------interface only obj，type both obj and fundamental
+  type dog=number| string 
+//------------------------interface用extends扩展。type用&
+  type animal =meow & {
+    gender:string
+  }
+  let cute:animal={name:'1',age:1,gender:'1'}
+  
+ 
+
+}

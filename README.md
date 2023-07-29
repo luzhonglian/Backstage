@@ -26,28 +26,9 @@ Vue-cli+Element Plus+Vue3.2+ts+setup 语法糖编写 <br>
 
 ### 安装 node 和 npm
 
-### 安装以下依赖
 
-```
- "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-plugin-typescript": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "@vue/eslint-config-typescript": "^9.1.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
-    "sass": "^1.32.7",
-    "sass-loader": "^12.0.0",
-    "typescript": "~4.5.5",
-    "unplugin-auto-import": "^0.13.0",
-    "unplugin-vue-components": "^0.23.0"
-  }
-```
-### 在vue.config.js中加入如下配置
+### vue.config.js配置ElementPlus自动导入
+>https://element-plus.gitee.io/zh-CN/guide/quickstart.html#%E6%8C%89%E9%9C%80%E5%AF%BC%E5%85%A5
 ```
 configureWebpack: {
     plugins: [
@@ -65,6 +46,7 @@ configureWebpack: {
 ## 项目运行 <a name = "usage"></a>
 
 ```
+npm install
 npm run serve
 ```
 
