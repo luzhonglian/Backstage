@@ -27,22 +27,6 @@ Vue-cli+Element Plus+Vue3.2+ts+setup 语法糖编写 <br>
 ### 安装 node 和 npm
 
 
-### vue.config.js配置ElementPlus自动导入
->https://element-plus.gitee.io/zh-CN/guide/quickstart.html#%E6%8C%89%E9%9C%80%E5%AF%BC%E5%85%A5
-```
-configureWebpack: {
-    plugins: [
-      AutoImport({
-        resolvers: [ElementPlusResolver()],
-      }),
-      Components({
-        resolvers: [ElementPlusResolver()],
-      }),
-    
-    ],
-  }
-```
-
 ## 项目运行 <a name = "usage"></a>
 
 ```
