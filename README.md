@@ -1,6 +1,7 @@
 # 后台管理系统
 
 ## 目录
+
 - [在线查看](#demo)
 - [关于](#about)
 - [项目运行准备](#getting_started)
@@ -9,14 +10,16 @@
 - [感想](#opinion)
 
 ## 在线查看 <a name = "demo"></a>
+
 https://luzhonglian.github.io/Backstage/  
-登录账号lzl，密码123
+登录账号 lzl，密码 123（获取 mock 数据请勿使用科学上网）
+
 ## 关于 <a name = "about"></a>
 
 Vue-cli+Element Plus+Vue3.2+ts+setup 语法糖编写 <br>
 该项目为前端页面，后台数据在 fastmock 上布置，可在 src/mock 中查看<br>
 项目分为以下模块：<br>
-**登录**：账号匹配lzl:123即可登录<br>
+**登录**：账号匹配 lzl:123 即可登录<br>
 **商品列表**：请求商品数据，分页展示，可通过标题和详情进行查询<br>
 **用户列表**：分为管理员和普通用户，可通过姓名和角色进行查询，对已有用户进行编辑操作<br>
 **角色列表**:可添加除普通用户和管理员之外的其他角色，并对普通用户和管理员的权限进行修改<br>
@@ -25,7 +28,6 @@ Vue-cli+Element Plus+Vue3.2+ts+setup 语法糖编写 <br>
 ## 项目运行准备 <a name = "getting_started"></a>
 
 ### 安装 node 和 npm
-
 
 ## 项目运行 <a name = "usage"></a>
 
@@ -39,7 +41,7 @@ npm run serve
 **通过 name+params 方式传参时提示：Discarded invalid param(s) “id“, “auths“ when navigating.** <br><br>
 BUG 原因：这种传参方式因为页面刷新后会被丢失而被移除了，详情：https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22
 
-解决方案：通过在路由中设置带参数的动态路由匹配变可在传参后通过route拿到params
+解决方案：通过在路由中设置带参数的动态路由匹配变可在传参后通过 route 拿到 params
 
 ```
  {
@@ -48,14 +50,20 @@ BUG 原因：这种传参方式因为页面刷新后会被丢失而被移除了�
         component: () => import("../views/AuthorityView.vue"),
       },
 ```
-**从Element-plus 导入ElMessage, ElMessageBox并调用prompt时会出现样式丢失问题** <br><br>
+
+**从 Element-plus 导入 ElMessage, ElMessageBox 并调用 prompt 时会出现样式丢失问题** <br><br>
+
 ```
 import { ElMessage, ElMessageBox } from 'element-plus'
 ```
+
 解决方案：手动引入样式
+
 ```
 import 'element-plus/es/components/message-box/style/css';
-import 'element-plus/es/components/message/style/css'; 
+import 'element-plus/es/components/message/style/css';
 ```
+
 ## 感想 <a name = "opinion"></a>
-vue-cli比vite慢好多
+
+vue-cli 比 vite 慢好多
