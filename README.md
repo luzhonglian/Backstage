@@ -12,7 +12,7 @@
 ## 在线查看 <a name = "demo"></a>
 
 https://luzhonglian.github.io/Backstage/  
-登录账号 lzl，密码 123（获取 mock 数据请勿使用科学上网）
+登录账号 lzl，密码 123（使用科学上网获取 mock 数据可能失效）
 
 ## 关于 <a name = "about"></a>
 
